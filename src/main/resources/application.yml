@@ -1,0 +1,17 @@
+server:
+  port: 11087
+  servlet:
+    context-path: /dev-grab
+
+spring:
+  application:
+    name: dev-grab
+  servlet:
+    multipart:
+      max-file-size: 500MB
+      max-request-size: 500MB
+
+logging:
+  config: classpath:log-back.xml
+  level:
+    com.klldh: DEBUG
